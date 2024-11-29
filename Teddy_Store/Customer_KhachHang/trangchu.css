@@ -1,0 +1,122 @@
+/* Thanh công cụ ngang (Navbar) */
+.navbar {
+    background: linear-gradient(90deg, #FFC1CC 0%, #EADAFD 100%); /* Gradient hồng và tím nhạt */
+    color: #5A5A5A; /* Màu chữ trung tính */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
+    width: 100%; /* Độ rộng đầy đủ */
+    height: 100%;
+    margin-top: 3px; /* Khoảng cách với nội dung phía trên */
+    z-index: 1000; /* Đảm bảo navbar luôn hiển thị trên các phần khác */
+    display: flex; /* Sắp xếp liên kết nằm ngang */
+    justify-content: center; /* Canh giữa các liên kết */
+    border-bottom: 2px solid rgba(255, 193, 204, 0.5); /* Đường viền nhẹ */
+}
+
+
+
+/* Các liên kết trong navbar */
+.navbar a {
+    color: #4A4A4A; /* Màu chữ trắng */
+    text-decoration: none; /* Xóa gạch chân */
+    padding: 10px 15px;
+    display: inline-block; /* Các liên kết nằm ngang */
+    border-radius: 5px; /* Bo góc nhẹ */
+    margin-right: 10px; /* Khoảng cách giữa các liên kết */
+    transition: all 0.3s ease; /* Hiệu ứng khi hover */
+}
+
+/* Hiệu ứng hover cho các liên kết */
+.navbar a:hover {
+    background-color: #C58DE6; /* Tím pastel đậm hơn */
+    color: #FFFFFF; /* Màu trắng để nổi bật khi hover */
+    box-shadow: 0px 4px 6px rgba(197, 141, 230, 0.4); /* Đổ bóng nhẹ khi hover */
+}
+
+/* Nội dung chính h1 và thanh tìm kiếm*/
+/* --------------------------------------------- */
+/* Thanh chứa h1 và thanh tìm kiếm */
+.header-bar {
+    display: flex; /* Sắp xếp các phần tử theo chiều ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    justify-content: space-between; /* Đặt khoảng cách giữa h1 và thanh tìm kiếm */
+    padding: 10px 20px; /* Khoảng cách bên trong */
+    background-color: #f9f9f9; /* Nền sáng nhẹ */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
+}
+
+/* Tiêu đề h1 */
+.header-bar h1 {
+    font-size: 27px; /* Kích thước chữ */
+    margin: 0; /* Loại bỏ khoảng cách mặc định */
+    color: #333; /* Màu chữ trung tính */
+}
+h1.gradient-text {
+    font-family: 'Dancing Script', cursive; /* Font chữ bay bổng */
+   
+    font-weight: 600; /* Độ dày chữ */
+    text-align: center; /* Canh giữa */
+    margin: 2px 0; /* Khoảng cách */
+    background: linear-gradient(90deg, #D94A8C, #7A4F91); /* Màu gradient */
+    -webkit-background-clip: text; /* Áp dụng background vào phần chữ */
+    -webkit-text-fill-color: transparent; /* Đổ màu gradient */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
+}
+h1.gradient-text {
+    color: #7A4F91; /* Màu tím dự phòng */
+}
+
+/* Thanh tìm kiếm */
+.search-bar {
+    display: flex; /* Sắp xếp theo chiều ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    background-color: #fff; /* Nền trắng */
+    border-radius: 5px; /* Bo góc thanh tìm kiếm */
+    padding: 5px; /* Khoảng cách giữa các phần tử bên trong */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Đổ bóng nhẹ */
+}
+/* ------------------------------------------------------------------------- */
+/* tìm kiếm */
+/* Phong cách cho thanh tìm kiếm */
+.search-bar {
+    display: flex; /* Sắp xếp theo chiều ngang */
+    align-items: center; /* Căn giữa các phần tử theo chiều dọc */
+    margin-left: auto; /* Đẩy thanh tìm kiếm sang bên phải */
+    background-color: #fff; /* Nền trắng */
+    border-radius: 12px; /* Bo góc thanh tìm kiếm */
+    padding: 5px; /* Khoảng cách giữa các phần tử bên trong */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Đổ bóng nhẹ */
+}
+
+/* Phong cách cho ô nhập liệu */
+.search-bar input {
+    border: none; /* Loại bỏ viền */
+    outline: none; /* Loại bỏ viền xanh khi chọn */
+    padding: 5px 10px; /* Khoảng cách bên trong ô nhập liệu */
+    border-radius: 5px; /* Bo góc ô nhập liệu */
+    font-size: 14px; /* Kích thước chữ */
+    width: 330px; /* Chiều rộng ô tìm kiếm */
+    transition: width 0.3s ease; /* Hiệu ứng khi nhập */
+}
+
+/* Khi ô nhập được chọn, mở rộng chiều rộng */
+.search-bar input:focus {
+    width: 360px;
+}
+
+/* Phong cách cho nút tìm kiếm */
+.search-bar button {
+    background-color: #eeaff3; /* Màu hồng đậm */
+    border: none; /* Loại bỏ viền */
+    color: #1c1919; /* Màu chữ trắng */
+    padding: 5px 10px; /* Khoảng cách nút */
+    border-radius: 10px; /* Bo góc nút */
+    font-size: 14px; /* Kích thước chữ */
+    cursor: pointer; /* Con trỏ thành bàn tay khi hover */
+    margin-left: 5px; /* Khoảng cách giữa nút và ô nhập liệu */
+    transition: background-color 0.3s ease; /* Hiệu ứng khi hover */
+}
+
+/* Hiệu ứng hover cho nút tìm kiếm */
+.search-bar button:hover {
+    background-color: #f6cff3; /* Màu hồng đậm hơn khi hover */
+}
